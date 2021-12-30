@@ -2,37 +2,58 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation {
+  background: #000;
+  text-align: center;
+  padding   : 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navigation a {
+  color          : white;
+  text-decoration: none;
+  padding        : 10px 15px;
+  font-size      : 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navigation a:hover {
+  background: lightgray;
+  color     : black;
 }
 
-.App-link {
-  color: #61dafb;
+.active {
+  background: lightgray;
+  color     : black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shop {
+  display              : grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.pd {
+  display      : flex;
+  border-bottom: 1px solid lightgray;
+  padding      : 5px;
+  margin       : 5px;
+}
+
+.btn-regular {
+  background   : goldenrod;
+  border-radius: 3px;
+  outline      : none;
+  font-size    : 15px;
+  padding      : 5px 15px;
+  border       : none;
+  cursor       : pointer;
+}
+
+.cart {
+  margin-left: 10px;
+  border-left: 1px solid lightgray;
+  padding    : 10px;
+}
+
+.productRev {
+  padding      : 15px;
+  border-bottom: 1px solid lightgray;
 }
